@@ -1,0 +1,85 @@
+*::before,*::after,*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family:"cheri";
+    src: url("./assets/fonts/cheri/CHERI___.TTF") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family:"gamy";
+    src: url("./assets/fonts/gamy/Gamy-PERSONAL.otf") /* TTF file for CSS3 browsers */
+}
+
+body{
+    background-color: #f5babb00;
+    font-family: 'cheri';
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+}
+.score{
+    align-self: flex-start;
+    color:rgb(39, 37, 37);
+}
+.score span{
+    color:grey;
+}
+
+
+
+#title{
+    text-align: center;
+    font-size: 60px;
+    margin-top:20px;
+    color:#015c75cc;
+    font-family: 'gamy';
+
+}
+
+
+.imgs-container{
+    width:70vw;
+    /* border:red solid 1px; */
+    margin:40px auto 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    padding:0 140px;
+ } 
+
+
+ .card{
+     width:150px;
+     height:180px;
+     background-image: url(./assets/images/back-1.jpg);
+     /* background-size: cover; */
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* border:red solid 1px; */
+     border-radius:10px;
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
+     padding:5px 3px;
+
+ }
+
+ footer{
+     position: fixed;
+     bottom:0;
+     text-align: center;
+     /* margin:0 5px; */
+     width: 100%;
+     padding:16px;
+     color:#103e4bcc;
+     font-size: 18px;
+     background-color:rgb(248, 246, 246);
+    /* border:red solid 1px; */
+    font-family:monospace ;
+    
+ }
